@@ -33,10 +33,10 @@ gulp.task('mainIndex:dev', ['markup'] ,function () {
     return gulp.src('.public/english/index.html')
         // take file and change paths for the main folder index.html
         .pipe(assetpaths({
-          newDomain: '',
+          newDomain: './',
           oldDomain : '../',
           docRoot : 'public_html',
-          filetypes : ['jpg','jpeg','png','ico','gif','js','css'],
+          filetypes : ['jpg','jpeg','png','ico','gif','js','css', 'html'],
           templates: true
          }))
         .pipe(gulp.dest('.public/'))
@@ -47,10 +47,10 @@ gulp.task('mainIndex:prod', ['markup'] ,function () {
     return gulp.src('dist/english/index.html')
         // take file and change paths for the main folder index.html
         .pipe(assetpaths({
-          newDomain: '',
+          newDomain: './',
           oldDomain : '../',
           docRoot : 'public_html',
-          filetypes : ['jpg','jpeg','png','ico','gif','js','css'],
+          filetypes : ['jpg','jpeg','png','ico','gif','js','css', 'html'],
           templates: true
          }))
         .pipe(gulp.dest('dist/'))
