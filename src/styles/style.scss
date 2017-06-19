@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+//------------------------------------------
+//	BASE
+//	Variables, Mixins, base
+//------------------------------------------
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800';
+@import '../bower_components/normalize-scss/normalize.scss';
+
+
+//------------------------------------------
+//	MODULES
+//	Specific module Styles
+//------------------------------------------
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.header {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.nav {
+    & {
+        text-align: right;
+    }
+    &__list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: inline-block;
+        }
+        li + li {
+            margin-left: 20px;
+        }
+    }
+    &__link {
+        color: #333;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 12px;
+    }
+}
+main {
+    padding: 20px;
+}
+
+.is-translated {
+    margin: 30px;
+    background-color: #C8F7C5;
+    padding: 30px;
+
+    .urdu & {
+        text-align: right;
+        direction: rtl;
+    }
+}

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="!{translation.code}!">
+
+<head>
+    <meta charset="utf-8">
+    <title>!{translation.lang}!</title>
+    <!-- Mobile Meta-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Icons-->
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+
+    <!-- Styles-->
+    <link rel="stylesheet" type="text/css" href="../css/style.min.css" />
+
+</head>
+
+<body class="!{translation.locale}!">
+
+    <header class="header" role="banner">
+        <nav class="nav" role="navigation">
+            <ul class="nav__list">
+                <li><a class="nav__link" href="../index.html">english</a></li>
+                <li><a class="nav__link" href="../chinese/index.html">中文</a></li>
+                <li><a class="nav__link" href="../french/index.html">Français</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main">
+        <section>
+            <h1>Gulp workflow with translations</h1>
+            <p>sass, livereload, and generated translations via json files</p>
+            <p>Note: text/translations are taken apple.com for demo</p>
+        </section>
+        <section class="is-translated">
+            <h2>iPad Pro</h2>
+            <h3>!{translation.title}!</h3>
+            <p>!{translation.para1}!</p>
+            <p>!{translation.para2}!</p>
+        </section>
+    </main>
+
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="../js/vendor/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/scripts.min.js"></script>
+
+</body>
+
+</html>
